@@ -64,7 +64,7 @@ const EditorPage = () => {
           onCopy={() => setCopied(true)}>
           <Button type="primary">复制HTML</Button>
         </CopyToClipboard>
-        {copied && <span>内容已拷贝</span>}
+        {copied && <span className="text-red-500 ml-2">内容已拷贝！！！</span>}
             </div>
             <div
             dangerouslySetInnerHTML={{ __html: html }}
